@@ -12,4 +12,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "landing_page#index"
+  get "menu" => "landing_page#menu", as: :menu
 end
