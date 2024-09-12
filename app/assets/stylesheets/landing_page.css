@@ -1,0 +1,73 @@
+.hero {
+  background: url('https://img.freepik.com/free-photo/delicious-indian-food-tray_23-2148723505.jpg?t=st=1726128769~exp=1726132369~hmac=9bb430de0873d40243f7a1ef54e1738d4414dc3c04f44f5e545f705ebb9d69e2&w=1380') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.hero .btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+}
+
+.featured-menu {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.featured-menu h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.testimonials {
+  padding: 60px 0;
+}
+
+.testimonials h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.call-to-action {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.call-to-action h2 {
+  margin-bottom: 20px;
+}
+
+.call-to-action .btn {
+  padding: 15px 30px;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
