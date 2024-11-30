@@ -8,18 +8,21 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="<%= root_url %>">Home</a>
+          <a class="nav-link <%= 'active' if current_page?(root_url) %>" href="<%= root_url %>">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<%= menu_url %>">Menu</a>
+          <a class="nav-link <%= 'active' if current_page?(products_url) %>" href="<%= products_url %>">Product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<%= about_url %>">About</a>
+          <a class="nav-link <%= 'active' if current_page?(about_url) %>" href="<%= about_url %>">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<%= contact_url %>">Contact</a>
+          <a class="nav-link <%= 'active' if current_page?(contact_url) %>" href="<%= contact_url %>">Contact</a>
         </li>
-      </ul>
+        <li class="nav-item">
+          <a class="nav-link btn btn-warning">Cart 0</a>
+        </li>
+      </ul>  
     </div>
   </div>
 </nav>
