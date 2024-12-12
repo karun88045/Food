@@ -1,0 +1,41 @@
+<nav class="sidebar" style="hieght: 200px; width:125px; background-color: black;">
+  <header>
+    <div class="image-text">
+      <div class="text logo-text ps-2 pt-1">
+        <%= link_to super_admin_dashboards_path, class: "text-decoration-none" do %>
+          <h2>Foodie</h2>
+        <% end %>
+      </div>
+    </div>
+    <div class='toggle sidebar-toggle'>
+      <i class="fa-solid fa-angle-right"></i>
+    </div>
+  </header>
+  <div class="menu-bar">
+    <div class="menu">
+      <ul class="menu-links nav" id="menu-links">
+        <li class="nav-item w-100">
+          <%= link_to super_admin_dashboards_path , class:"nav-link font-size-6 text-white" do %>
+            <i class="fa-solid fa-house-chimney icon"></i>
+            <span class="text nav-text">Dashboard<span>
+          <% end %>
+        </li>
+        <li class="nav-item w-100">
+          <%= link_to super_admin_products_path , class:"nav-link font-size-6 text-white" do %>
+            <i class="fa-solid fa-house-chimney icon"></i>
+            <span class="text nav-text">Products<span>
+          <% end %>
+        </li>
+      </ul>
+
+    </div>
+    <ul class="bottom-content menu-links nav font-size-6">
+      <li class="nav-link w-100">
+        <%= button_to "", method: :delete, class: "link_to btn p-0 d-flex align-items-center border-0 w-100 text-white", form_class: "d-inline", id: 'logoutButton' do %>
+          <i class="fa-solid fa-arrow-right-from-bracket icon"></i>
+          <span class="text nav-text fs-6 font-size-6">Logout<span>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</nav>

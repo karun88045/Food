@@ -1,0 +1,11 @@
+<%= simple_form_for @product, url: (@product.persisted? ? super_admin_product_path(@product) : super_admin_products_path) do |f| %><%= render "shared/menubar" %>
+  <div class="card-body p-3 mt-1 fs-6 d-flex flex-column gap-3">
+    <%= f.input :name, required: true %>
+    <%= f.input :description, as: :text, input_html: { rows: 4 }, required: true %>
+    <%= f.input :size %>
+    <%= f.input :price, required: true %>
+  </div>
+  <div class="card-footer p-md-4 p-3 d-flex justify-content-end bg-white">
+    <%= f.submit "Submit", class: "btn btn-primary p-2 px-md-4 px-3 fs-6" %>
+  </div>
+<% end %>
