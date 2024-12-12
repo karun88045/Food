@@ -19,8 +19,13 @@
         <li class="nav-item">
           <a class="nav-link <%= 'active' if current_page?(contact_url) %>" href="<%= contact_url %>">Contact</a>
         </li>
+        <% if true %>
+          <li class="nav-item">
+            <a class="nav-link btn btn-warning">Cart 0</a>
+          </li>
+        <% end %>
         <li class="nav-item">
-          <a class="nav-link btn btn-warning">Cart 0</a>
+          <a class="nav-link" href="<%= super_admin_dashboards_url %>">Login</a>
         </li>
       </ul>  
     </div>

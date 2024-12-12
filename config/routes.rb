@@ -18,9 +18,11 @@ Rails.application.routes.draw do
   get "about" => "landing_page#about", as: :about
   get "contact" => "landing_page#contact", as: :contact
   get "message" => "message#index", as: :message
+  get "tests" => "tests#index", as: :tests
   resources :products, only: [:index, :new, :edit, :show, :update]
 
   namespace :super_admin do
+    resources :dashboards, only: [:index]
     resources :products, only: [:index, :new, :edit, :show, :update, :delete]
   end
 end
